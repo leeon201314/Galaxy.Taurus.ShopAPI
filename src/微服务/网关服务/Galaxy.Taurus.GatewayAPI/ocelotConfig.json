@@ -1,0 +1,53 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/authorizationAPI/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "118.24.249.202",
+          "Port": 8082
+        }
+      ],
+      "UpstreamPathTemplate": "/authorizationAPI/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Options" ]
+    },
+    {
+      "DownstreamPathTemplate": "/shopInfoAPI/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "118.24.249.202",
+          "Port": 8086
+        }
+      ],
+      "UpstreamPathTemplate": "/shopInfoAPI/{everything}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/goodInfoAPI/{everything}",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/goodInfoAPI/{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "118.24.249.202",
+          "Port": 8085
+        }
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "PeriodTimespan": 5,
+        "Limit": 5
+      }
+    }
+  ],
+  "GlobalConfiguration": {
+    "ServiceDiscoveryProvider": {
+      "Host": "118.24.249.202",
+      "Port": 8500
+    }
+  }
+}
