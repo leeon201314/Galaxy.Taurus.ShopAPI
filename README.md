@@ -7,3 +7,21 @@
 ## 项目介绍
 
  Galaxy.Taurus.ShopAPI是一个商场API服务，基于c# netcore，使用微服务的架构。整个系统包括用户授权微服务，商品管理微服务，订单管理微服务，文件管理微服务等多个微服务。
+ 
+ ## 架构及技术点介绍
+ 
+ - 分布式授权及认证：JWT
+ - 网关：Ocelot
+ - ORM：Entity Framework
+ - 缓存：Redis
+ - 消息队列：RabbitMQ
+ - 服务发现及服务注册：Consul
+ - NoSql数据库：MongoDb
+ - 部署：Docker
+ - 文档生产工具：Swagger-UI
+ 
+ ## 关于授权
+ 
+  Galaxy.Taurus.ShopAPI并非采用完全免费的授权模式，将该项目或该项目的的副本用于商业目的的使用，将按每个店铺每年一杯星巴克榛果拿铁中杯（当前30元）的费用进行授权。
+  
+ ## 联系我  qq:499053596  电话：15976992510 微信同号
