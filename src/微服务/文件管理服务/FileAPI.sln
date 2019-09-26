@@ -1,0 +1,115 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Taurus.FileAPI", "webApi\Galaxy.Taurus.FileAPI\Galaxy.Taurus.FileAPI.csproj", "{49A1EFB1-8147-4CCA-87DF-BA799F0319CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "数据实体", "数据实体", "{7C70020C-AEDF-49A8-8728-186F09377C43}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "数据库仓储", "数据库仓储", "{EABC5A3D-A5E2-4B90-BF82-B8684C259FD5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Taurus.FileAPI.IDBRepository", "数据库仓储\Galaxy.Taurus.FileAPI.IDBRepository\Galaxy.Taurus.FileAPI.IDBRepository.csproj", "{31627B49-DDA6-4558-8A2F-E4F5CC43AAD4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "服务配置", "服务配置", "{062BD639-CFF8-4538-AC02-58F56729D070}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Taurus.FileAPI.ServiceConfig", "服务配置\Galaxy.Taurus.FileAPI.ServiceConfig\Galaxy.Taurus.FileAPI.ServiceConfig.csproj", "{21AF9A05-553B-4D5E-BC40-59527C8438F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Taurus.FileAPI.DBRepository", "数据库仓储\Galaxy.Taurus.FileAPI.DBRepository\Galaxy.Taurus.FileAPI.DBRepository.csproj", "{ED12D857-32C7-4F66-BA2E-3CF1B9E585C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "业务逻辑", "业务逻辑", "{4337F208-2DEB-4865-9217-89E01B29E1D5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Taurus.FileAPI.Entitys", "数据实体\Galaxy.Taurus.FileAPI.Entitys\Galaxy.Taurus.FileAPI.Entitys.csproj", "{5F9F4138-B76A-43F4-A9B7-578F7BB7AA42}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Taurus.FileAPI.Business", "业务逻辑\Galaxy.Taurus.FileAPI.Business\Galaxy.Taurus.FileAPI.Business.csproj", "{F480E26F-0A09-49E2-A6A3-0A1E23836303}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Taurus.FileAPI.IBusiness", "业务逻辑\Galaxy.Taurus.FileAPI.IBusiness\Galaxy.Taurus.FileAPI.IBusiness.csproj", "{DA5D62CA-1DD2-434C-9C8C-F0F741FA5C5F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "依赖注入", "依赖注入", "{CDBAFEC7-2235-47EA-A7E5-34B8C530EC0E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Taurus.FileAPI.Dependency", "依赖注入\Galaxy.Taurus.FileAPI.Dependency\Galaxy.Taurus.FileAPI.Dependency.csproj", "{2EB161A5-1744-42A5-88CA-8E5C0B5F25BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Taurus.FileAPI.UTest", "单元测试\Galaxy.Taurus.FileAPI.UTest\Galaxy.Taurus.FileAPI.UTest.csproj", "{FC71E207-F220-4F31-BA1A-A40EA7F4F2FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "公共模块", "公共模块", "{DF243B5C-2FF4-4A8A-A5A3-7AEE6FAF1264}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Taurus.AuthUtil", "..\..\公共模块\AuthUtil\Galaxy.Taurus.AuthUtil\Galaxy.Taurus.AuthUtil.csproj", "{40058C58-D898-41E8-B035-F307322DFADC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Taurus.IDBUtil", "..\..\公共模块\DBUtil\Galaxy.Taurus.IDBUtil\Galaxy.Taurus.IDBUtil.csproj", "{A6A85524-7275-470C-884E-45AEEF12163D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Taurus.DBUtil", "..\..\公共模块\DBUtil\Galaxy.Taurus.DBUtil\Galaxy.Taurus.DBUtil.csproj", "{6EBC7111-67C2-4864-96C0-65AA60310CF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49A1EFB1-8147-4CCA-87DF-BA799F0319CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49A1EFB1-8147-4CCA-87DF-BA799F0319CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49A1EFB1-8147-4CCA-87DF-BA799F0319CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49A1EFB1-8147-4CCA-87DF-BA799F0319CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31627B49-DDA6-4558-8A2F-E4F5CC43AAD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31627B49-DDA6-4558-8A2F-E4F5CC43AAD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31627B49-DDA6-4558-8A2F-E4F5CC43AAD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31627B49-DDA6-4558-8A2F-E4F5CC43AAD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21AF9A05-553B-4D5E-BC40-59527C8438F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21AF9A05-553B-4D5E-BC40-59527C8438F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21AF9A05-553B-4D5E-BC40-59527C8438F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21AF9A05-553B-4D5E-BC40-59527C8438F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED12D857-32C7-4F66-BA2E-3CF1B9E585C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED12D857-32C7-4F66-BA2E-3CF1B9E585C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED12D857-32C7-4F66-BA2E-3CF1B9E585C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED12D857-32C7-4F66-BA2E-3CF1B9E585C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F9F4138-B76A-43F4-A9B7-578F7BB7AA42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F9F4138-B76A-43F4-A9B7-578F7BB7AA42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F9F4138-B76A-43F4-A9B7-578F7BB7AA42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F9F4138-B76A-43F4-A9B7-578F7BB7AA42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F480E26F-0A09-49E2-A6A3-0A1E23836303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F480E26F-0A09-49E2-A6A3-0A1E23836303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F480E26F-0A09-49E2-A6A3-0A1E23836303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F480E26F-0A09-49E2-A6A3-0A1E23836303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA5D62CA-1DD2-434C-9C8C-F0F741FA5C5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA5D62CA-1DD2-434C-9C8C-F0F741FA5C5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA5D62CA-1DD2-434C-9C8C-F0F741FA5C5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA5D62CA-1DD2-434C-9C8C-F0F741FA5C5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EB161A5-1744-42A5-88CA-8E5C0B5F25BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EB161A5-1744-42A5-88CA-8E5C0B5F25BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EB161A5-1744-42A5-88CA-8E5C0B5F25BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EB161A5-1744-42A5-88CA-8E5C0B5F25BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC71E207-F220-4F31-BA1A-A40EA7F4F2FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC71E207-F220-4F31-BA1A-A40EA7F4F2FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC71E207-F220-4F31-BA1A-A40EA7F4F2FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC71E207-F220-4F31-BA1A-A40EA7F4F2FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40058C58-D898-41E8-B035-F307322DFADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40058C58-D898-41E8-B035-F307322DFADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40058C58-D898-41E8-B035-F307322DFADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40058C58-D898-41E8-B035-F307322DFADC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6A85524-7275-470C-884E-45AEEF12163D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6A85524-7275-470C-884E-45AEEF12163D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6A85524-7275-470C-884E-45AEEF12163D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6A85524-7275-470C-884E-45AEEF12163D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EBC7111-67C2-4864-96C0-65AA60310CF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EBC7111-67C2-4864-96C0-65AA60310CF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EBC7111-67C2-4864-96C0-65AA60310CF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EBC7111-67C2-4864-96C0-65AA60310CF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{31627B49-DDA6-4558-8A2F-E4F5CC43AAD4} = {EABC5A3D-A5E2-4B90-BF82-B8684C259FD5}
+		{21AF9A05-553B-4D5E-BC40-59527C8438F8} = {062BD639-CFF8-4538-AC02-58F56729D070}
+		{ED12D857-32C7-4F66-BA2E-3CF1B9E585C4} = {EABC5A3D-A5E2-4B90-BF82-B8684C259FD5}
+		{5F9F4138-B76A-43F4-A9B7-578F7BB7AA42} = {7C70020C-AEDF-49A8-8728-186F09377C43}
+		{F480E26F-0A09-49E2-A6A3-0A1E23836303} = {4337F208-2DEB-4865-9217-89E01B29E1D5}
+		{DA5D62CA-1DD2-434C-9C8C-F0F741FA5C5F} = {4337F208-2DEB-4865-9217-89E01B29E1D5}
+		{2EB161A5-1744-42A5-88CA-8E5C0B5F25BB} = {CDBAFEC7-2235-47EA-A7E5-34B8C530EC0E}
+		{40058C58-D898-41E8-B035-F307322DFADC} = {DF243B5C-2FF4-4A8A-A5A3-7AEE6FAF1264}
+		{A6A85524-7275-470C-884E-45AEEF12163D} = {DF243B5C-2FF4-4A8A-A5A3-7AEE6FAF1264}
+		{6EBC7111-67C2-4864-96C0-65AA60310CF8} = {DF243B5C-2FF4-4A8A-A5A3-7AEE6FAF1264}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B178ECF4-3BBB-48EE-83E6-F9045B4059F5}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.2\Galaxy.Taurus.FileAPI.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.2\Galaxy.Taurus.FileAPI.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.1" />
+    <PackageReference Include="Consul" Version="0.7.2.6" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="5.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\公共模块\AuthUtil\Galaxy.Taurus.AuthUtil\Galaxy.Taurus.AuthUtil.csproj" />
+    <ProjectReference Include="..\..\业务逻辑\Galaxy.Taurus.FileAPI.Business\Galaxy.Taurus.FileAPI.Business.csproj" />
+    <ProjectReference Include="..\..\业务逻辑\Galaxy.Taurus.FileAPI.IBusiness\Galaxy.Taurus.FileAPI.IBusiness.csproj" />
+    <ProjectReference Include="..\..\依赖注入\Galaxy.Taurus.FileAPI.Dependency\Galaxy.Taurus.FileAPI.Dependency.csproj" />
+    <ProjectReference Include="..\..\数据实体\Galaxy.Taurus.FileAPI.Entitys\Galaxy.Taurus.FileAPI.Entitys.csproj" />
+    <ProjectReference Include="..\..\数据库仓储\Galaxy.Taurus.FileAPI.DBRepository\Galaxy.Taurus.FileAPI.DBRepository.csproj" />
+    <ProjectReference Include="..\..\数据库仓储\Galaxy.Taurus.FileAPI.IDBRepository\Galaxy.Taurus.FileAPI.IDBRepository.csproj" />
+    <ProjectReference Include="..\..\服务配置\Galaxy.Taurus.FileAPI.ServiceConfig\Galaxy.Taurus.FileAPI.ServiceConfig.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="AuthKey\key.public.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

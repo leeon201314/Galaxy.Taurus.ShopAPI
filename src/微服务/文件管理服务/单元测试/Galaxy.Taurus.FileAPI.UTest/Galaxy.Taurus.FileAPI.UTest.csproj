@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.0" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+    <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\业务逻辑\Galaxy.Taurus.FileAPI.Business\Galaxy.Taurus.FileAPI.Business.csproj" />
+    <ProjectReference Include="..\..\业务逻辑\Galaxy.Taurus.FileAPI.IBusiness\Galaxy.Taurus.FileAPI.IBusiness.csproj" />
+    <ProjectReference Include="..\..\依赖注入\Galaxy.Taurus.FileAPI.Dependency\Galaxy.Taurus.FileAPI.Dependency.csproj" />
+    <ProjectReference Include="..\..\数据实体\Galaxy.Taurus.FileAPI.Entitys\Galaxy.Taurus.FileAPI.Entitys.csproj" />
+    <ProjectReference Include="..\..\数据库仓储\Galaxy.Taurus.FileAPI.DBRepository\Galaxy.Taurus.FileAPI.DBRepository.csproj" />
+    <ProjectReference Include="..\..\数据库仓储\Galaxy.Taurus.FileAPI.IDBRepository\Galaxy.Taurus.FileAPI.IDBRepository.csproj" />
+    <ProjectReference Include="..\..\服务配置\Galaxy.Taurus.FileAPI.ServiceConfig\Galaxy.Taurus.FileAPI.ServiceConfig.csproj" />
+  </ItemGroup>
+
+</Project>

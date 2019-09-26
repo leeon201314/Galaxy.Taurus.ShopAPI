@@ -1,0 +1,12 @@
+﻿{
+  "DBConfig": {
+    "dbType": "mysql",
+    "dbName": "TestAAA",
+    "server": "172.30.10.13",
+    "port": "3306",
+    "user": "root",
+    "password": "123456"
+  },
+  "MainDirectory": "//Temp",
+  "BaseUrl": "http://192.24.65.202:81/fileapiData"
+}

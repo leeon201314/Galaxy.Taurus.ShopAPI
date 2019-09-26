@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="IShopInfoExtensionsBusiness.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\数据实体\Galaxy.Taurus.FileAPI.Entitys\Galaxy.Taurus.FileAPI.Entitys.csproj" />
+    <ProjectReference Include="..\..\服务配置\Galaxy.Taurus.FileAPI.ServiceConfig\Galaxy.Taurus.FileAPI.ServiceConfig.csproj" />
+  </ItemGroup>
+
+</Project>
