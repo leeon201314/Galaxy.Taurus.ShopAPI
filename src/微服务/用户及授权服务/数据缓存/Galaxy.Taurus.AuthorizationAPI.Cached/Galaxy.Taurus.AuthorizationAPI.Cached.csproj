@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CSRedisCore" Version="3.0.48" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\数据实体\Galaxy.Taurus.AuthorizationAPI.Entitys\Galaxy.Taurus.AuthorizationAPI.Entitys.csproj" />
+    <ProjectReference Include="..\Galaxy.Taurus.AuthorizationAPI.ICached\Galaxy.Taurus.AuthorizationAPI.ICached.csproj" />
+  </ItemGroup>
+
+</Project>

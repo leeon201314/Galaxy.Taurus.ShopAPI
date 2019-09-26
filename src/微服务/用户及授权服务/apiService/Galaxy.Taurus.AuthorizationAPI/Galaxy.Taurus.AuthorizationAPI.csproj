@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.2\Galaxy.Taurus.AuthorizationAPI.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.2\Galaxy.Taurus.AuthorizationAPI.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Attributes\**" />
+    <Content Remove="Attributes\**" />
+    <EmbeddedResource Remove="Attributes\**" />
+    <None Remove="Attributes\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+    <PackageReference Include="System.Drawing.Common" Version="4.5.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\公共模块\SMS\Galaxy.Taurus.SMSUtil\Galaxy.Taurus.SMSUtil.csproj" />
+    <ProjectReference Include="..\..\业务逻辑\Galaxy.Taurus.AuthorizationAPI.Business\Galaxy.Taurus.AuthorizationAPI.Business.csproj" />
+    <ProjectReference Include="..\..\业务逻辑\Galaxy.Taurus.AuthorizationAPI.IBusiness\Galaxy.Taurus.AuthorizationAPI.IBusiness.csproj" />
+    <ProjectReference Include="..\..\依赖注入\Galaxy.Taurus.AuthorizationAPI.Dependency\Galaxy.Taurus.AuthorizationAPI.Dependency.csproj" />
+    <ProjectReference Include="..\..\数据实体\Galaxy.Taurus.AuthorizationAPI.Entitys\Galaxy.Taurus.AuthorizationAPI.Entitys.csproj" />
+    <ProjectReference Include="..\..\数据库存储\Galaxy.Taurus.AuthorizationAPI.DBAccess\Galaxy.Taurus.AuthorizationAPI.DBAccess.csproj" />
+    <ProjectReference Include="..\..\数据库存储\Galaxy.Taurus.AuthorizationAPI.IDBAccess\Galaxy.Taurus.AuthorizationAPI.IDBAccess.csproj" />
+    <ProjectReference Include="..\..\数据缓存\Galaxy.Taurus.AuthorizationAPI.Cached\Galaxy.Taurus.AuthorizationAPI.Cached.csproj" />
+    <ProjectReference Include="..\..\服务配置\Galaxy.Taurus.AuthorizationAPI.Config\Galaxy.Taurus.AuthorizationAPI.Config.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+</Project>

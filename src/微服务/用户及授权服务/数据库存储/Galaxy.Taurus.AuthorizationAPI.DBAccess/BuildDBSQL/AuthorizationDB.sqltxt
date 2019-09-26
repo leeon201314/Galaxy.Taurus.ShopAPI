@@ -1,0 +1,58 @@
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for member
+-- ----------------------------
+DROP TABLE IF EXISTS `member`;
+CREATE TABLE `member` (
+  `Id` varchar(32) NOT NULL,
+  `PhoneNumber` varchar(50) NOT NULL,
+  `UserName` varchar(50) DEFAULT NULL,
+  `Psw` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Table structure for r_user_role
+-- ----------------------------
+DROP TABLE IF EXISTS `r_user_role`;
+CREATE TABLE `r_user_role` (
+  `UserId` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+  `ShopId` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+  `RoleName` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`UserId`,`ShopId`,`RoleName`),
+  UNIQUE KEY `AK_R_User_Role_RoleId_ShopId_UserId` (`RoleName`,`ShopId`,`UserId`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ----------------------------
+-- Table structure for userinfo
+-- ----------------------------
+DROP TABLE IF EXISTS `userinfo`;
+CREATE TABLE `userinfo` (
+  `Id` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+  `PhoneNumber` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `UserName` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `Psw` varchar(32) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ----------------------------
+-- Table structure for wxmenber
+-- ----------------------------
+DROP TABLE IF EXISTS `wxmenber`;
+CREATE TABLE `wxmenber` (
+  `AppId` varchar(32) NOT NULL,
+  `OpenId` varchar(32) NOT NULL,
+  `MenberId` varchar(32) DEFAULT NULL,
+  PRIMARY KEY (`AppId`,`OpenId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Table structure for __efmigrationshistory
+-- ----------------------------
+DROP TABLE IF EXISTS `__efmigrationshistory`;
+CREATE TABLE `__efmigrationshistory` (
+  `MigrationId` varchar(150) CHARACTER SET utf8 NOT NULL,
+  `ProductVersion` varchar(32) CHARACTER SET utf8 NOT NULL,
+  PRIMARY KEY (`MigrationId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
