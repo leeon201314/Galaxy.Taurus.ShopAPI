@@ -4,6 +4,7 @@ using Galaxy.Taurus.AuthorizationAPI.Config;
 using Galaxy.Taurus.AuthorizationAPI.ConsulExtensions;
 using Galaxy.Taurus.AuthorizationAPI.Dependency;
 using Galaxy.Taurus.AuthorizationAPI.GalaxyAuth;
+using Galaxy.Taurus.CachedUtil;
 using Galaxy.Taurus.DBUtil;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

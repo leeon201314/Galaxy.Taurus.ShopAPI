@@ -1,6 +1,6 @@
 ﻿using CSRedis;
 
-namespace Galaxy.Taurus.AuthorizationAPI.Cached
+namespace Galaxy.Taurus.CachedUtil
 {
     public class CSRedisInitHelper
     {

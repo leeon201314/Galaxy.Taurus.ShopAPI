@@ -41,9 +41,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Taurus.SMSUtil", "..
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Taurus.AuthorizationAPI", "apiService\Galaxy.Taurus.AuthorizationAPI\Galaxy.Taurus.AuthorizationAPI.csproj", "{4C2ACB4E-225A-409F-B9AE-92189D3F13F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.Taurus.DBUtil", "..\..\公共模块\DBUtil\Galaxy.Taurus.DBUtil\Galaxy.Taurus.DBUtil.csproj", "{5C769ED2-A442-4191-AAEC-01270DA1998E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Taurus.DBUtil", "..\..\公共模块\DBUtil\Galaxy.Taurus.DBUtil\Galaxy.Taurus.DBUtil.csproj", "{5C769ED2-A442-4191-AAEC-01270DA1998E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.Taurus.IDBUtil", "..\..\公共模块\DBUtil\Galaxy.Taurus.IDBUtil\Galaxy.Taurus.IDBUtil.csproj", "{B5BF6471-D5B1-4EB8-9951-F05048118025}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Taurus.IDBUtil", "..\..\公共模块\DBUtil\Galaxy.Taurus.IDBUtil\Galaxy.Taurus.IDBUtil.csproj", "{B5BF6471-D5B1-4EB8-9951-F05048118025}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.Taurus.CachedUtil", "..\..\公共模块\Cached\Galaxy.Taurus.CachedUtil\Galaxy.Taurus.CachedUtil.csproj", "{3316F31B-E1E1-425A-B5CD-F5F21D552431}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.Taurus.MQUtil", "..\..\公共模块\MQ\Galaxy.Taurus.MQUtil\Galaxy.Taurus.MQUtil.csproj", "{931331DA-302E-42EE-AB39-F661C589E4B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -107,6 +111,14 @@ Global
 		{B5BF6471-D5B1-4EB8-9951-F05048118025}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5BF6471-D5B1-4EB8-9951-F05048118025}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5BF6471-D5B1-4EB8-9951-F05048118025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3316F31B-E1E1-425A-B5CD-F5F21D552431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3316F31B-E1E1-425A-B5CD-F5F21D552431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3316F31B-E1E1-425A-B5CD-F5F21D552431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3316F31B-E1E1-425A-B5CD-F5F21D552431}.Release|Any CPU.Build.0 = Release|Any CPU
+		{931331DA-302E-42EE-AB39-F661C589E4B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{931331DA-302E-42EE-AB39-F661C589E4B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{931331DA-302E-42EE-AB39-F661C589E4B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{931331DA-302E-42EE-AB39-F661C589E4B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -124,6 +136,8 @@ Global
 		{2292FBD5-8737-4679-829C-40261776325F} = {48587B41-5D91-4B63-B6D5-A253E81BFE7A}
 		{5C769ED2-A442-4191-AAEC-01270DA1998E} = {48587B41-5D91-4B63-B6D5-A253E81BFE7A}
 		{B5BF6471-D5B1-4EB8-9951-F05048118025} = {48587B41-5D91-4B63-B6D5-A253E81BFE7A}
+		{3316F31B-E1E1-425A-B5CD-F5F21D552431} = {48587B41-5D91-4B63-B6D5-A253E81BFE7A}
+		{931331DA-302E-42EE-AB39-F661C589E4B1} = {48587B41-5D91-4B63-B6D5-A253E81BFE7A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {71E9D70D-DEE3-45B6-ACAF-622726864F92}
