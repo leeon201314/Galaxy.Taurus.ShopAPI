@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\公共模块\Cached\Galaxy.Taurus.CachedUtil\Galaxy.Taurus.CachedUtil.csproj" />
+    <ProjectReference Include="..\Galaxy.Taurus.OrderingAPI.ICached\Galaxy.Taurus.OrderingAPI.ICached.csproj" />
+  </ItemGroup>
+
+</Project>

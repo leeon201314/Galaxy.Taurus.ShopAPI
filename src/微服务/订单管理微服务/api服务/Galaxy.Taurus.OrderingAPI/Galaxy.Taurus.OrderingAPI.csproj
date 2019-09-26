@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.2\Galaxy.Taurus.OrderingAPI.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.2\Galaxy.Taurus.OrderingAPI.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.2" />
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Consul" Version="0.7.2.6" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\公共模块\AuthUtil\Galaxy.Taurus.AuthUtil\Galaxy.Taurus.AuthUtil.csproj" />
+    <ProjectReference Include="..\..\..\..\公共模块\Cached\Galaxy.Taurus.CachedUtil\Galaxy.Taurus.CachedUtil.csproj" />
+    <ProjectReference Include="..\..\..\..\公共模块\DBUtil\Galaxy.Taurus.DBUtil\Galaxy.Taurus.DBUtil.csproj" />
+    <ProjectReference Include="..\..\业务逻辑\Galaxy.Taurus.OrderingAPI.Business\Galaxy.Taurus.OrderingAPI.Business.csproj" />
+    <ProjectReference Include="..\..\业务逻辑\Galaxy.Taurus.OrderingAPI.IBusiness\Galaxy.Taurus.OrderingAPI.IBusiness.csproj" />
+    <ProjectReference Include="..\..\依赖注入\Galaxy.Taurus.OrderingAPI.Dependency\Galaxy.Taurus.OrderingAPI.Dependency.csproj" />
+    <ProjectReference Include="..\..\数据实体\Galaxy.Taurus.OrderingAPI.Entitys\Galaxy.Taurus.OrderingAPI.Entitys.csproj" />
+    <ProjectReference Include="..\..\数据库存储\Galaxy.Taurus.OrderingAPI.DBAccess\Galaxy.Taurus.OrderingAPI.DBAccess.csproj" />
+    <ProjectReference Include="..\..\数据库存储\Galaxy.Taurus.OrderingAPI.IDBAccess\Galaxy.Taurus.OrderingAPI.IDBAccess.csproj" />
+    <ProjectReference Include="..\..\数据缓存\Galaxy.Taurus.OrderingAPI.Cached\Galaxy.Taurus.OrderingAPI.Cached.csproj" />
+    <ProjectReference Include="..\..\数据缓存\Galaxy.Taurus.OrderingAPI.ICached\Galaxy.Taurus.OrderingAPI.ICached.csproj" />
+    <ProjectReference Include="..\..\服务配置\Galaxy.Taurus.OrderingAPI.ServiceConfig\Galaxy.Taurus.OrderingAPI.ServiceConfig.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="AuthKey\key.public.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\数据实体\Galaxy.Taurus.OrderingAPI.Entitys\Galaxy.Taurus.OrderingAPI.Entitys.csproj" />
+  </ItemGroup>
+
+</Project>
