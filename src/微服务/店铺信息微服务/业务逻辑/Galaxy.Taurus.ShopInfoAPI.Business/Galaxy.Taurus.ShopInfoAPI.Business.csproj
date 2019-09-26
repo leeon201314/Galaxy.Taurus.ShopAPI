@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\数据库存储\Galaxy.Taurus.ShopInfoAPI.IDBAccess\Galaxy.Taurus.ShopInfoAPI.IDBAccess.csproj" />
+    <ProjectReference Include="..\..\数据模型\Galaxy.Taurus.ShopInfoAPI.Entitys\Galaxy.Taurus.ShopInfoAPI.Entitys.csproj" />
+    <ProjectReference Include="..\..\数据缓存\Galaxy.Taurus.ShopInfoAPI.ICached\Galaxy.Taurus.ShopInfoAPI.ICached.csproj" />
+    <ProjectReference Include="..\Galaxy.Taurus.ShopInfoAPI.IBusiness\Galaxy.Taurus.ShopInfoAPI.IBusiness.csproj" />
+  </ItemGroup>
+
+</Project>

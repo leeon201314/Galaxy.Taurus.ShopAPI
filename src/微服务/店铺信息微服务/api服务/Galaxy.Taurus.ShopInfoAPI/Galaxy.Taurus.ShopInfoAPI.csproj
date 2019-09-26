@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.2\Galaxy.Taurus.ShopInfoAPI.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.2\Galaxy.Taurus.ShopInfoAPI.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="Consul" Version="0.7.2.6" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="5.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\公共模块\AuthUtil\Galaxy.Taurus.AuthUtil\Galaxy.Taurus.AuthUtil.csproj" />
+    <ProjectReference Include="..\..\..\..\公共模块\Cached\Galaxy.Taurus.CachedUtil\Galaxy.Taurus.CachedUtil.csproj" />
+    <ProjectReference Include="..\..\..\..\公共模块\DBUtil\Galaxy.Taurus.DBUtil\Galaxy.Taurus.DBUtil.csproj" />
+    <ProjectReference Include="..\..\业务逻辑\Galaxy.Taurus.ShopInfoAPI.Business\Galaxy.Taurus.ShopInfoAPI.Business.csproj" />
+    <ProjectReference Include="..\..\业务逻辑\Galaxy.Taurus.ShopInfoAPI.IBusiness\Galaxy.Taurus.ShopInfoAPI.IBusiness.csproj" />
+    <ProjectReference Include="..\..\依赖注入\Galaxy.Taurus.ShopInfoAPI.Dependency\Galaxy.Taurus.ShopInfoAPI.Dependency.csproj" />
+    <ProjectReference Include="..\..\数据库存储\Galaxy.Taurus.ShopInfoAPI.DBAccess\Galaxy.Taurus.ShopInfoAPI.DBAccess.csproj" />
+    <ProjectReference Include="..\..\数据库存储\Galaxy.Taurus.ShopInfoAPI.IDBAccess\Galaxy.Taurus.ShopInfoAPI.IDBAccess.csproj" />
+    <ProjectReference Include="..\..\数据模型\Galaxy.Taurus.ShopInfoAPI.Entitys\Galaxy.Taurus.ShopInfoAPI.Entitys.csproj" />
+    <ProjectReference Include="..\..\数据缓存\Galaxy.Taurus.ShopInfoAPI.Cached\Galaxy.Taurus.ShopInfoAPI.Cached.csproj" />
+    <ProjectReference Include="..\..\数据缓存\Galaxy.Taurus.ShopInfoAPI.ICached\Galaxy.Taurus.ShopInfoAPI.ICached.csproj" />
+    <ProjectReference Include="..\..\服务配置\Galaxy.Taurus.ShopInfoAPI.Configs\Galaxy.Taurus.ShopInfoAPI.Configs.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="AuthKey\key.public.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Attributes\" />
+  </ItemGroup>
+
+</Project>

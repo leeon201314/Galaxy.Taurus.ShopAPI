@@ -1,0 +1,28 @@
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for HomeBanner
+-- ----------------------------
+DROP TABLE IF EXISTS `HomeBanner`;
+CREATE TABLE `HomeBanner` (
+  `BusinessId` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+  `ShopId` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+  `ShowIndex` int(255) DEFAULT NULL,
+  `PicUrl` varchar(255) CHARACTER SET utf8mb4 NOT NULL,
+  PRIMARY KEY (`BusinessId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ----------------------------
+-- Table structure for ShopInfo
+-- ----------------------------
+DROP TABLE IF EXISTS `ShopInfo`;
+CREATE TABLE `ShopInfo` (
+  `Id` varchar(32) CHARACTER SET utf8mb4 NOT NULL,
+  `Name` varchar(60) CHARACTER SET utf8mb4 NOT NULL,
+  `ShopDesc` varchar(255) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `Address` varchar(255) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `Tel` varchar(32) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `WeChat` varchar(32) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `QQ` varchar(32) CHARACTER SET utf8mb4 DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

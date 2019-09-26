@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.0" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+    <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\业务逻辑\Galaxy.Taurus.ShopInfoAPI.Business\Galaxy.Taurus.ShopInfoAPI.Business.csproj" />
+    <ProjectReference Include="..\..\业务逻辑\Galaxy.Taurus.ShopInfoAPI.IBusiness\Galaxy.Taurus.ShopInfoAPI.IBusiness.csproj" />
+    <ProjectReference Include="..\..\依赖注入\Galaxy.Taurus.ShopInfoAPI.Dependency\Galaxy.Taurus.ShopInfoAPI.Dependency.csproj" />
+    <ProjectReference Include="..\..\数据库存储\Galaxy.Taurus.ShopInfoAPI.DBAccess\Galaxy.Taurus.ShopInfoAPI.DBAccess.csproj" />
+    <ProjectReference Include="..\..\数据库存储\Galaxy.Taurus.ShopInfoAPI.IDBAccess\Galaxy.Taurus.ShopInfoAPI.IDBAccess.csproj" />
+    <ProjectReference Include="..\..\数据模型\Galaxy.Taurus.ShopInfoAPI.Entitys\Galaxy.Taurus.ShopInfoAPI.Entitys.csproj" />
+    <ProjectReference Include="..\..\数据缓存\Galaxy.Taurus.ShopInfoAPI.Cached\Galaxy.Taurus.ShopInfoAPI.Cached.csproj" />
+    <ProjectReference Include="..\..\数据缓存\Galaxy.Taurus.ShopInfoAPI.ICached\Galaxy.Taurus.ShopInfoAPI.ICached.csproj" />
+    <ProjectReference Include="..\..\服务配置\Galaxy.Taurus.ShopInfoAPI.Configs\Galaxy.Taurus.ShopInfoAPI.Configs.csproj" />
+  </ItemGroup>
+
+</Project>
