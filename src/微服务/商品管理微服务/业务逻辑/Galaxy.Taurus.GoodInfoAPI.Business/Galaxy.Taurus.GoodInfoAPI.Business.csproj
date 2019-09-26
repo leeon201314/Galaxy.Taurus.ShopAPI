@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\数据库存储\Galaxy.Taurus.GoodInfoAPI.IDBAccess\Galaxy.Taurus.GoodInfoAPI.IDBAccess.csproj" />
+    <ProjectReference Include="..\..\数据模型\Galaxy.Taurus.GoodInfoAPI.Entitys\Galaxy.Taurus.GoodInfoAPI.Entitys.csproj" />
+    <ProjectReference Include="..\..\数据缓存\Galaxy.Taurus.GoodInfoAPI.ICached\Galaxy.Taurus.GoodInfoAPI.ICached.csproj" />
+    <ProjectReference Include="..\Galaxy.Taurus.GoodInfoAPI.IBusiness\Galaxy.Taurus.GoodInfoAPI.IBusiness.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.2\Galaxy.Taurus.GoodInfoAPI.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.2\Galaxy.Taurus.GoodInfoAPI.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\公共模块\AuthUtil\Galaxy.Taurus.AuthUtil\Galaxy.Taurus.AuthUtil.csproj" />
+    <ProjectReference Include="..\..\..\..\公共模块\Cached\Galaxy.Taurus.CachedUtil\Galaxy.Taurus.CachedUtil.csproj" />
+    <ProjectReference Include="..\..\业务逻辑\Galaxy.Taurus.GoodInfoAPI.Business\Galaxy.Taurus.GoodInfoAPI.Business.csproj" />
+    <ProjectReference Include="..\..\业务逻辑\Galaxy.Taurus.GoodInfoAPI.IBusiness\Galaxy.Taurus.GoodInfoAPI.IBusiness.csproj" />
+    <ProjectReference Include="..\..\依赖注入\Galaxy.Taurus.GoodInfoAPI.Dependency\Galaxy.Taurus.GoodInfoAPI.Dependency.csproj" />
+    <ProjectReference Include="..\..\数据库存储\Galaxy.Taurus.GoodInfoAPI.DBAccess\Galaxy.Taurus.GoodInfoAPI.DBAccess.csproj" />
+    <ProjectReference Include="..\..\数据库存储\Galaxy.Taurus.GoodInfoAPI.IDBAccess\Galaxy.Taurus.GoodInfoAPI.IDBAccess.csproj" />
+    <ProjectReference Include="..\..\数据模型\Galaxy.Taurus.GoodInfoAPI.Entitys\Galaxy.Taurus.GoodInfoAPI.Entitys.csproj" />
+    <ProjectReference Include="..\..\数据缓存\Galaxy.Taurus.GoodInfoAPI.Cached\Galaxy.Taurus.GoodInfoAPI.Cached.csproj" />
+    <ProjectReference Include="..\..\数据缓存\Galaxy.Taurus.GoodInfoAPI.ICached\Galaxy.Taurus.GoodInfoAPI.ICached.csproj" />
+    <ProjectReference Include="..\..\服务配置\Galaxy.Taurus.GoodInfoAPI.ServiceConfig\Galaxy.Taurus.GoodInfoAPI.ServiceConfig.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="AuthKey\key.public.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

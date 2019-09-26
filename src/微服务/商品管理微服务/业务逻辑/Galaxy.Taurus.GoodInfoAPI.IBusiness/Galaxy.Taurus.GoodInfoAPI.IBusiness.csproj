@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\数据模型\Galaxy.Taurus.GoodInfoAPI.Entitys\Galaxy.Taurus.GoodInfoAPI.Entitys.csproj" />
+  </ItemGroup>
+
+</Project>

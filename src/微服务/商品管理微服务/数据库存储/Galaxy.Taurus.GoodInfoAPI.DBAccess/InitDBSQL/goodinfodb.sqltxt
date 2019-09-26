@@ -1,0 +1,74 @@
+
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for goodinfo
+-- ----------------------------
+DROP TABLE IF EXISTS `goodinfo`;
+CREATE TABLE `goodinfo` (
+  `Id` varchar(32) NOT NULL,
+  `CategoryId` varchar(32) DEFAULT NULL,
+  `ShopId` varchar(32) NOT NULL,
+  `Name` varchar(60) NOT NULL,
+  `Pic` varchar(255) DEFAULT NULL,
+  `RecommendStatus` tinyint(1) DEFAULT NULL,
+  `Status` tinyint(1) DEFAULT NULL,
+  `OriginalPrice` decimal(10,2) DEFAULT NULL,
+  `Price` decimal(10,2) DEFAULT NULL,
+  `ShowIndex` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Table structure for goodinfoextensions
+-- ----------------------------
+DROP TABLE IF EXISTS `goodinfoextensions`;
+CREATE TABLE `goodinfoextensions` (
+  `GoodInfoId` varchar(32) NOT NULL,
+  `ShopId` varchar(32) NOT NULL,
+  `Banner` text,
+  `DescMedia` text,
+  `Specification` text,
+  PRIMARY KEY (`GoodInfoId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Table structure for goodinfosku
+-- ----------------------------
+DROP TABLE IF EXISTS `goodinfosku`;
+CREATE TABLE `goodinfosku` (
+  `SKUId` varchar(32) NOT NULL,
+  `ShopId` varchar(32) NOT NULL,
+  `GoodInfoId` varchar(32) NOT NULL,
+  `Specification1` varchar(255) DEFAULT NULL,
+  `Specification2` varchar(255) DEFAULT NULL,
+  `Specification3` varchar(255) DEFAULT NULL,
+  `Price` decimal(10,2) DEFAULT NULL,
+  `Stock` int(11) DEFAULT NULL,
+  PRIMARY KEY (`SKUId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Table structure for goodscategory
+-- ----------------------------
+DROP TABLE IF EXISTS `goodscategory`;
+CREATE TABLE `goodscategory` (
+  `Id` varchar(32) NOT NULL,
+  `ShopId` varchar(32) NOT NULL,
+  `Name` varchar(255) NOT NULL,
+  `ShowIndex` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Table structure for shopinfoextensions
+-- ----------------------------
+DROP TABLE IF EXISTS `shopinfoextensions`;
+CREATE TABLE `shopinfoextensions` (
+  `ShopId` varchar(32) NOT NULL,
+  `LimitCategoryNum` int(11) NOT NULL,
+  `CategoryDataVersion` varchar(32) NOT NULL,
+  `LimitGoodNum` int(11) NOT NULL,
+  `GoodDataVersion` varchar(32) NOT NULL,
+  PRIMARY KEY (`ShopId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

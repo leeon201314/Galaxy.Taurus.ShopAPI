@@ -1,0 +1,14 @@
+﻿{
+  "DBConfig": {
+    "dbType": "mysql",
+    "dbName": "GoodInfoDB",
+    "server": "192.30.0.13",
+    "port": "3306",
+    "user": "root",
+    "password": "123456"
+  },
+  "RedisConfig": {
+    "server": "192.30.0.13",
+    "port": "6379"
+  }
+}
