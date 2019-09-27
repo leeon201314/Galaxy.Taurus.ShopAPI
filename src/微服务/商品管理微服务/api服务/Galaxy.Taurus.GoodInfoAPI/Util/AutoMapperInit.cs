@@ -54,7 +54,9 @@ namespace Galaxy.Taurus.GoodInfoAPI.Util
 
                 cfg.CreateMap<DataResult, ResultViewModel>().ReverseMap();
 
-                cfg.CreateMap<GetGoodPriceParams, GoodPriceViewModel>().ReverseMap();
+                cfg.CreateMap<GetGoodPriceParams, GoodPriceViewModel>()
+                    .ForMember(dest => dest.Price, opt => opt.Ignore())
+                    .ReverseMap();
             });
 
             config.AssertConfigurationIsValid();
