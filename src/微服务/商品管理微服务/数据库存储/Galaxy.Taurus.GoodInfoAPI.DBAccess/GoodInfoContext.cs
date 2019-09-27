@@ -80,7 +80,7 @@ namespace Galaxy.Taurus.GoodInfoAPI.DBAccess
 
             int count = query.Count();
 
-            if (pageSize > 0)
+            if (pageSize > 0 && pageIndex > 0)
             {
                 query = query.Skip(pageSize * (pageIndex - 1)).Take(pageSize);
             }
@@ -103,7 +103,7 @@ namespace Galaxy.Taurus.GoodInfoAPI.DBAccess
             int goodCount = await CurrentDbSet.CountAsync(gr => gr.ShopId == goodInfo.ShopId);
 
             if (goodCount >= shopInfoExtensions.LimitGoodNum)
-                return new DataResult { Code = DataResultCode.Fail, Message = $"最多只能拥有{shopInfoExtensions.LimitCategoryNum}个商品！" };
+                return new DataResult { Code = DataResultCode.Fail, Message = $"最多只能拥有{shopInfoExtensions.LimitGoodNum}个商品！" };
 
 
             using (IDbContextTransaction transaction = Database.BeginTransaction(IsolationLevel.ReadCommitted))
